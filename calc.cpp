@@ -51,7 +51,7 @@ inline double do_input(std::string num)
 
 int main (void)
 {
-    system("rm -r _tmp");
+    system("rm -rf _tmp");
     system("mkdir _tmp");
     std::string buffer;
     void* dl_handle;
@@ -85,7 +85,6 @@ int main (void)
     }
 
     dlclose(dl_handle);
-    system("rm -r _tmp");
-    system("mkdir _tmp");
+    system("rm -rf _tmp");
     return 0;
 }
